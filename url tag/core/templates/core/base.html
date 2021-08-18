@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--block title tag is used to inheritance and edit in other place that means 
+    we can change title with this tag in other file where we inherited base.html file -->
+
+  <title>{% block title %}Other{% endblock title %}</title>
+  </head>
+ <body>
+  <nav>
+   <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/cor/django">Django Course</a></li>
+    <li>About</li>
+    <li>Django Course</li>
+   </ul>
+  </nav>
+  {% block content %} {% endblock content %}
+  <!--it is a block content we can change it here note that can't compulsery to call all block in other file-->
+  {% block content1 %} {% endblock content1 %}
+  {% block content2 %} {% endblock content2 %}
+  </body>
+</html>

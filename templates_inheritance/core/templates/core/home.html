@@ -1,0 +1,10 @@
+{% extends 'core/base.html' %}
+
+<!--here block.super is used to call super class title 
+note=we can call super class as well as subclass feature in one tag-->
+{% block title %}{{block.super}}Home{% endblock title %}
+<!--output of title is other home-->
+
+{% block content %}
+<h2>I am New Home Page</h2>
+{% endblock content %}
